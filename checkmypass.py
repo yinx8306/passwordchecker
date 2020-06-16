@@ -28,7 +28,7 @@ def pwned_api_check(password):
 
 
 def main(txt_file):
-	f= open(sys.argv[1], 'r')
+	f= open(txt_file, 'r')
 	line=f.read().splitlines()
 	
 	for password in line:
@@ -37,10 +37,11 @@ def main(txt_file):
 			print(f'{password} was found {count} times... you should change the password')
 		else:
 			print(f'{password} was NOT found. Carry on!')
-	return 'Done'
+	return 0
 
 if __name__=='__main__':
 	sys.exit(main(sys.argv[1]))
+
 
 
 
