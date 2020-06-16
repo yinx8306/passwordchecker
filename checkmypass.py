@@ -27,8 +27,8 @@ def pwned_api_check(password):
 	return get_password_leaks_count(response,tail)
 
 
-def main(txt_file):
-	f= open(txt_file, 'r')
+def main():
+	f= open(sys.argv[1], 'r')
 	line=f.read().splitlines()
 	
 	for password in line:
@@ -40,7 +40,7 @@ def main(txt_file):
 	return 0
 
 if __name__=='__main__':
-	sys.exit(main(sys.argv[1]))
+	sys.exit(main())
 
 
 
