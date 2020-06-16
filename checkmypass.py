@@ -29,7 +29,7 @@ def pwned_api_check(password):
 
 
 
-def main(args):
+def main(txt_file):
 	f= open(sys.argv[1], 'r')
 	line=f.read().splitlines()
 	
