@@ -37,8 +37,7 @@ def main(txt_file):
 			print(f'{password} was found {count} times... you should change the password')
 		else:
 			print(f'{password} was NOT found. Carry on!')
-		
-	return 'Done!'
+	return 'Done'
 
 if __name__=='__main__':
 	sys.exit(main(sys.argv[1]))
